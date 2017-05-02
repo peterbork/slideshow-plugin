@@ -1,0 +1,2 @@
+# slideshow-plugin
+School Project
