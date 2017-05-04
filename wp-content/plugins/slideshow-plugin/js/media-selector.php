@@ -2,9 +2,9 @@
     jQuery(document).ready(function ($) {
         var file_frame;
         // I know this is wrong ...
-        var set_to_post_id = wp.media.model.settings.post.id;
         var wp_media_post_id = wp.media.model.settings.post.id;
-        console.log(wp_media_post_id);
+        var set_to_post_id = jQuery('input[name="slideshow_slides"]').val();
+        
         jQuery('#upload_image_button').on('click', function (event) {
             event.preventDefault();
             if (file_frame !== undefined) {

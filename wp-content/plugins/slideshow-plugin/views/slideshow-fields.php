@@ -40,7 +40,6 @@
                     
 				}
 			} ?>
-            <img id='image-preview' src='<?php echo wp_get_attachment_url(get_option('media_selector_attachment_id')); ?>' height='100'>
         </div>
         <input id="upload_image_button" type="button" class="button" value="<?php _e('Upload image'); ?>"/>
         <input type='hidden' name='slideshow_slides' id='slideshow_slides' value="<?php echo $slides ?>">

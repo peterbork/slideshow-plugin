@@ -78,13 +78,10 @@ class SlideshowPlugin extends WP_Widget {
 		$duration = get_post_meta($data->ID, 'slideshow_duration', true);
 		$slides = get_post_meta($data->ID, 'slideshow_slides', true);
 		require_once 'views/slideshow-fields.php';
+		wp_enqueue_media();
 	}
 	
 	public function save_custom_post_type($post_id) {
-		if($_POST) {
-			/*var_dump($_POST);
-			die();*/
-		}
 		if(!isset($_POST[ 'slideshow_width' ]) && !empty($_POST[ 'slideshow_width' ])) {
 			return;
 		}
